@@ -1,8 +1,8 @@
 import pymongo
 import os
 from helper.date import add_date
-DB_NAME = os.environ.get("DB_NAME", "renamerbotdb")
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://W9Uyj61afEXSw601:W9Uyj61afEXSw601@cluster0.zsxso.mongodb.net/?retryWrites=true&w=majority")
+DB_NAME = os.environ.get("DB_NAME", "MS DZULQURNAIN")
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://Vsmi:bot@cluster0.hcoo8gc.mongodb.net/?retryWrites=true&w=majority")
 mongo = pymongo.MongoClient(DB_URL)
 db = mongo[DB_NAME]
 dbcol = db["user"]

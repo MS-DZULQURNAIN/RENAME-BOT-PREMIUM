@@ -1,0 +1,148 @@
+
+{
+
+    "name": "MS RENAME BOT",
+
+    "description": "Telegram File Renamer Bot 4GB ",
+
+    "keywords": [
+
+        "MS RENAME BOT",
+
+        "4GB File",
+
+        "telegram",
+        
+        "MS-DZULQURNAIN"
+
+    ],
+
+    "repository": "https://github.com/MS-DZULQURNAIN/RenameBotV2",
+
+    "success_url": "https://t.me/MsSUPP0RT",
+    
+    "logo": "https://telegra.ph/file/a5a014e4103728fa02ede.jpg", 
+
+    "env": {
+
+        "CHANNEL": {
+
+            "description": "USERNAME FSUB JAN PAKE @",
+            
+            "value": "stories_zulll", 
+
+            "required":true
+
+            
+
+         },
+
+        "STRING": {
+
+            "description": "PYROGRAM STRING PAKE @genStr_Bot",
+            
+            "value": "BQGgVR4AvFG3DTk4ZEHJK8KTLagZJC7GEOlS05TauRelMbZPyOo-1jtIGMN-QLw-xbEjVgCd-rCOXNoOJupFrO4tYBR-IBwIusLbzgJaw6jriDYAFG18Yd1rCU6eNU-1cvdd4R_dLG5kauJ75GNjw0Sgax8L8_MfhdC2rb-unYhTAFYTSRQjoE3bUdXBLxRNEPHesWwImWtNi7o8iEnB1S76E19ucSZDGbPWf1CAQQEZ-0qQjMHXnDcOgUBfLWktd-f8WUmfn3gZtmM75lbLo9hBg85AQQrWj5uK2x2D6Kg2i7DtIRhx83npEtTC9_nzzWJ-6xxi_tb01ZxzuYNnDBP8xxmtAgAAAABo3koPAA", 
+
+            "required": true
+
+        },
+
+        "API_ID": {
+
+            "description": "APP ID dari my.telegram.org ",
+            
+            "value": "27284766", 
+
+            "required": true
+
+        },
+
+        "API_HASH": {
+
+            "description": "API Hash dari my.telegram.org ",
+            
+            "value": "5eee659a58f9b6f1f1c7da0a8c896099", 
+
+            "required": true
+
+        },
+
+        "TOKEN": {
+
+            "description": "Bot Token dari @BotFather",
+            
+            "value": "6193639291:AAGiHFtP2_YTberljjh5IuOJqvJLo0vJ4BU", 
+
+            "required": true
+
+        },
+
+        "ADMIN": {
+
+            "description":"ID ADMIN",
+            
+            "value": "1759398415", 
+
+            "required": true
+
+        },
+
+        "DB_URL":{
+
+             "description":"Database Url dari From Mongo DB (OPTIONAL)", 
+            
+             "value": "mongodb+srv://Vsmi:bot@cluster0.hcoo8gc.mongodb.net/?retryWrites=true&w=majority", 
+            
+             "required": false
+        },
+
+        "DB_NAME":{
+
+               "description":"Database Name ",
+            
+               "value": "MS DZULQURNAIN", 
+
+               "required":false
+
+        },
+
+        "LOG_CHANNEL":{
+
+             "description":"ID LOG CHANNEL",
+            
+             "value": "-1001590676722", 
+
+             "required": true
+
+        },
+        "LAZY_PIC":{
+
+            "description":"FOTO START",
+            
+            "value": "https://telegra.ph/file/a5a014e4103728fa02ede.jpg", 
+
+            "required": true
+
+       }
+
+        
+
+    },
+
+    "buildpacks": [
+
+      {
+
+        "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+
+      },
+
+      {
+
+        "url": "heroku/python"
+
+      }
+
+    ]
+
+}

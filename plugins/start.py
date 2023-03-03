@@ -55,8 +55,10 @@ async def start(client, message):
 				      [InlineKeyboardButton("TUTORIAL", callback_data='tutor')]
                                       ]))
 	
-        return
-    if id:
+        await client.send_message(int(log_channel,f"**Nama**: {message.from_user.first_name} {message.from_user.last_name}\n**ID** : `{user_id}`\n\nMEMULAI BOT✅")) 
+				
+           return
+        if id:
         if old == True:
             try:
                 await client.send_message(id, "TEMEN LU DAH MAKE BOT GW👍")

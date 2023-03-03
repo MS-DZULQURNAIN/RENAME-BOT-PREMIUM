@@ -96,10 +96,14 @@ async def send_doc(client, message):
         except UserNotParticipant:
             _newus = find_one(message.from_user.id)
             user = _newus["usertype"]
-            await message.reply_text("Lu kaga subscribe channel gw njir‼ ketik /join abistu join baru bisa ya tod😏",
+            await message.reply_text("Lu kaga subscribe channel gw njir‼ join semua channel dibawah ini baru bisa ya tod😏",
                                      reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton("🔺 Update Channel 🔺", url=f"https://t.me/{update_channel}")]]))
+                                         [[InlineKeyboardButton("🔺 Update Channel 🔺", url=f"https://t.me/{fsub_channel}"),
+					   InlineKeyboardButton("", url="")],
+					  [InlineKeyboardButton("", url=""),
+					   InlineKeyboardButton("", url="")],
+					  [InlineKeyboardButton("", url="")]]))
             await client.send_message(log_channel,f"🦋 #GangsterBaby_LOGS 🦋,\n\n**ID** : `{user_id}`\n**Name**: {message.from_user.first_name} {message.from_user.last_name}\n**User-Plan** : {user}\n\n ",
                                                                                                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Restrict User ( **pm** ) 🔺", callback_data="ceasepower")]]))
             return

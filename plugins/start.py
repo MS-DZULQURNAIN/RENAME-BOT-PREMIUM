@@ -30,11 +30,11 @@ LAZY_PIC = os.environ.get("LAZY_PIC", "https://telegra.ph/file/a5a014e4103728fa0
 currentTime = datetime.datetime.now()
 
 if currentTime.hour < 12:
-    waktu = "selamat pagi🌞"
+    waktu = "selamat pagi njing🌞"
 elif 12 <= currentTime.hour < 12:
-    waktu = 'selamat sore🌝'
+    waktu = 'selamat sore njing🌝'
 else:
-    waktu = 'selamat malam🌚'
+    waktu = 'selamat malam njing🌚'
 
 # -------------------------------
 
@@ -45,9 +45,9 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-        txt=f'Halo {waktu} {message.from_user.first_name}❤\n\nSAYA ADALAH **MS VIDEO EDITOR💻**\n\nSaya dapat melakukan beberapa perintah editing video seperti **UBAH NAMA,ENCODE RESOLUSI,POTONG DURASI VIDEO,EXTRAC VIDEO KE AUDIO MP3,SPESIAL CUSTOM THUMBNAIL**' 
+        pesan=f'Halo {waktu} {message.from_user.first_name}❤\n\nGW ADALAH **MS VIDEO EDITOR💻**\n\nGw bisa ngedit video lu kaya **UBAH NAMA,ENCODE RESOLUSI,POTONG DURASI VIDEO,EXTRAC VIDEO KE AUDIO MP3,SPESIAL CUSTOM THUMBNAIL**' 
 	await message.reply_photo(photo=LAZY_PIC,
-                                caption=txt,
+                                caption=pesan,
                                 reply_markup=InlineKeyboardMarkup(
                                       [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/Film_Update_Official")],
                                       [InlineKeyboardButton("🦋HOW TO USE THIS BOT🦋", url="https://t.me/Film_Update_Official")],
@@ -59,9 +59,9 @@ async def start(client, message):
     if id:
         if old == True:
             try:
-                await client.send_message(id, "Your Friend is Already Using Our Bot")
+                await client.send_message(id, "TEMEN LU DAH MAKE BOT GW👍")
                 await message.reply_photo(photo=LAZY_PIC,
-                                         caption=txt,
+                                         caption=pesan,
                                          reply_markup=InlineKeyboardMarkup(
                                              [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/Film_Update_Official")],
                                               [InlineKeyboardButton("🦋HOW TO USE THIS BOT🦋", url="https://youtube.com/@ipapcorn")],

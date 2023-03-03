@@ -45,7 +45,7 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-        txt=f'Halo {waktu} {message.from_user.first_name}❤' 
+        txt=f'Halo {waktu} {message.from_user.first_name}❤\n\nSAYA ADALAH **MS VIDEO EDITOR💻**\n\nSaya dapat melakukan beberapa perintah editing video seperti **UBAH NAMA,ENCODE RESOLUSI,POTONG DURASI VIDEO,EXTRAC VIDEO KE AUDIO MP3,SPESIAL CUSTOM THUMBNAIL**' 
 	await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(

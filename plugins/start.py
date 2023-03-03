@@ -51,9 +51,8 @@ async def start(client, message):
                                 reply_markup=InlineKeyboardMarkup(
                                       [[InlineKeyboardButton("DEVELOPER👤", url="https://t.me/MSDZULQURNAIN")],
                                       [InlineKeyboardButton("🄼🅂 ק𝙍♢JΞC†", url="https://t.me/MSPR0JECT"),
-                                       InlineKeyboardButton("🄼🅂 Ꮥᴜקק♢ꭈׁׅ†", url='https://t.me/MsSUPP0RT')],
-                                      [InlineKeyboardButton("kiw kiw💘", url='https://t.me/Film_Update_Official')],
-                                      [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://t.me/Film_Update_Official')]
+                                       InlineKeyboardButton("🄼🅂 Ꮥᴜקק♢ꭈׁׅ†", url='https://t.me/MsSUPP0RT')], 
+				      [InlineKeyboardButton("TUTORIAL", callback_data='tutor')]
                                       ]))
         return
     if id:
@@ -61,48 +60,43 @@ async def start(client, message):
             try:
                 await client.send_message(id, "TEMEN LU DAH MAKE BOT GW👍")
                 await message.reply_photo(photo=LAZY_PIC,
-                                         caption=pesan,
-                                         reply_markup=InlineKeyboardMarkup(
-                                             [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/Film_Update_Official")],
-                                              [InlineKeyboardButton("🦋HOW TO USE THIS BOT🦋", url="https://youtube.com/@ipapcorn")],
-                                              [InlineKeyboardButton("Support Group", url='https://t.me/ipapcornsupport'),
-                                             InlineKeyboardButton("Movie Channel", url='https://t.me/Film_Update_Official')],
-                                             [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://t.me/Film_Update_Official')]
-                                          ]))
+                                caption=pesan,
+                                reply_markup=InlineKeyboardMarkup(
+                                      [[InlineKeyboardButton("DEVELOPER👤", url="https://t.me/MSDZULQURNAIN")],
+                                      [InlineKeyboardButton("🄼🅂 ק𝙍♢JΞC†", url="https://t.me/MSPR0JECT"),
+                                       InlineKeyboardButton("🄼🅂 Ꮥᴜקק♢ꭈׁׅ†", url='https://t.me/MsSUPP0RT')], 
+				      [InlineKeyboardButton("TUTORIAL", callback_data='tutor')]
+                                      ]))
             except:
                 return
         else:
-            await client.send_message(id, "Congrats! You Won 3GB Upload limit")
+            await client.send_message(id, "Selamat tod lu menang 3GB Upload limit")
             _user_ = find_one(int(id))
             limit = _user_["uploadlimit"]
             new_limit = limit + 3145728000
             uploadlimit(int(id), new_limit)
-            await message.reply_text(text=f"""
-	Hello {wish} {message.from_user.first_name }\n\n
-	__I am file renamer bot, Please send any telegram 
-	**Document Or Video** and enter new filename to rename it__
-	""", reply_to_message_id=message.id,
+            await message.reply_text(text=f'{pesan}', 
+				     reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/Film_Update_Official")],
-                                          [InlineKeyboardButton("🦋HOW TO USE THIS BOT🦋", url="https://youtube.com/@ipapcorn")],
-                                          [InlineKeyboardButton("Support Group", url='https://t.me/ipapcornsupport'),
-                                          InlineKeyboardButton("Movie Channel", url='https://t.me/Film_Update_Official')],
-                                          [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://t.me/Film_Update_Official')]
-                                          ]))
+                                         [[InlineKeyboardButton("DEVELOPER👤", url="https://t.me/MSDZULQURNAIN")],
+                                      [InlineKeyboardButton("🄼🅂 ק𝙍♢JΞC†", url="https://t.me/MSPR0JECT"),
+                                       InlineKeyboardButton("🄼🅂 Ꮥᴜקק♢ꭈׁׅ†", url='https://t.me/MsSUPP0RT')], 
+				      [InlineKeyboardButton("TUTORIAL", callback_data='tutor')]
+                                      ]))
     
 
 
 @Client.on_message((filters.private & (filters.document | filters.audio | filters.video)) | filters.channel & (filters.document | filters.audio | filters.video))
 async def send_doc(client, message):
-    update_channel = CHANNEL
+    fsub_channel = CHANNEL
     user_id = message.from_user.id
-    if update_channel:
+    if fsub_channel:
         try:
-            await client.get_chat_member(update_channel, user_id)
+            await client.get_chat_member(fsub_channel, user_id)
         except UserNotParticipant:
             _newus = find_one(message.from_user.id)
             user = _newus["usertype"]
-            await message.reply_text("**__You are not subscribed my channel__** ",
+            await message.reply_text("Lu kaga subscribe channel gw njir‼ ketik /join abistu join baru bisa ya tod😏",
                                      reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
                                          [[InlineKeyboardButton("🔺 Update Channel 🔺", url=f"https://t.me/{update_channel}")]]))

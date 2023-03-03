@@ -30,11 +30,11 @@ LAZY_PIC = os.environ.get("LAZY_PIC", "https://telegra.ph/file/a5a014e4103728fa0
 currentTime = datetime.datetime.now()
 
 if currentTime.hour < 12:
-    waktu = "selamat pagi njing🌞"
+    waktu = "selamat pagi 🌞"
 elif 12 <= currentTime.hour < 12:
-    waktu = 'selamat sore njing🌝'
+    waktu = 'selamat sore 🌝'
 else:
-    waktu = 'selamat malam njing🌚'
+    waktu = 'selamat malam 🌚'
 
 # -------------------------------
 
@@ -49,7 +49,7 @@ async def start(client, message):
 	await message.reply_photo(photo=LAZY_PIC,
                                 caption=pesan,
                                 reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/Film_Update_Official")],
+                                      [[InlineKeyboardButton("DEVELOPER", url="https://t.me/MSDZULQURNAIN")],
                                       [InlineKeyboardButton("🦋HOW TO USE THIS BOT🦋", url="https://t.me/Film_Update_Official")],
                                       [InlineKeyboardButton("Support Group", url='https://t.me/ipapcornsupport'),
                                       InlineKeyboardButton("Movie Channel", url='https://t.me/Film_Update_Official')],

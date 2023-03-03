@@ -45,9 +45,8 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-        txt=f"""Halo {waktu} {message.from_user.first_name}❤ \n\n
-	, Please sent any telegram**Document Or Video** and enter new filename to rename it"""
-        await message.reply_photo(photo=LAZY_PIC,
+        txt=f'Halo {waktu} {message.from_user.first_name}❤' 
+	await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(
                                       [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/Film_Update_Official")],

@@ -99,13 +99,13 @@ async def send_doc(client, message):
             await message.reply_text("Lu kaga subscribe channel gw njir‼ join semua channel dibawah ini baru bisa ya tod😏",
                                      reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton("🔺 Update Channel 🔺", url=f"https://t.me/{fsub_channel}"),
-					   InlineKeyboardButton("", url="")],
-					  [InlineKeyboardButton("", url=""),
-					   InlineKeyboardButton("", url="")],
-					  [InlineKeyboardButton("", url="")]]))
-            await client.send_message(log_channel,f"🦋 #GangsterBaby_LOGS 🦋,\n\n**ID** : `{user_id}`\n**Name**: {message.from_user.first_name} {message.from_user.last_name}\n**User-Plan** : {user}\n\n ",
-                                                                                                       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Restrict User ( **pm** ) 🔺", callback_data="ceasepower")]]))
+                                         [[InlineKeyboardButton("🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url="https://t.me/MSPR0JECT"),
+					   InlineKeyboardButton("🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url="https://t.me/MsSUPP0RT")],
+					  [InlineKeyboardButton("🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url="https://t.me/DZST0RE"),
+					   InlineKeyboardButton("🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url="https://t.me/TESTI_DZSTORE")],
+					  [InlineKeyboardButton("🄹♢ɨ𝐍  🄲ΉΛ𝐍𝐍ΞꝈ", url=f"https://t.me/{fsub_channel}")]]))
+            await client.send_message(log_channel,f"MS VIDEO EDITOR 💻,\n\n**ID** : `{user_id}`\n**Nama**: {message.from_user.first_name} {message.from_user.last_name}\n**Pengguna** : {user}\n\n ",
+                                                                                                       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("BATASI ANAK ANJ INI🚨", callback_data="ceasepower")]]))
             return
 
     try:

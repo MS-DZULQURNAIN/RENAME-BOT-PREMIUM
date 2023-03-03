@@ -15,26 +15,26 @@ from helper.database import daily as daily_
 from helper.date import check_expi
 import os
 
-CHANNEL = os.environ.get('CHANNEL', "-100152957746")
+CHANNEL = os.environ.get('CHANNEL', "")
 STRING = os.environ.get("STRING", "")
-ADMIN = int(os.environ.get("ADMIN", 5104293442))
-bot_username = os.environ.get("BOT_USERNAME","tlgrenamerbot")
-log_channel = int(os.environ.get("LOG_CHANNEL", "-100152957746"))
-token = os.environ.get('TOKEN', '5945280153:AAFk_spFvichod71v4qFDZXgZAtAcNVt28g')
+ADMIN = int(os.environ.get("ADMIN", 1759398415))
+bot_username = os.environ.get("BOT_USERNAME","")
+log_channel = int(os.environ.get("LOG_CHANNEL", ""))
+token = os.environ.get('TOKEN', '')
 botid = token.split(':')[0]
 FLOOD = 500
-LAZY_PIC = os.environ.get("LAZY_PIC", "https://graph.org/file/d052c0671e48ca6ca15be.jpg")
+LAZY_PIC = os.environ.get("LAZY_PIC", "https://telegra.ph/file/a5a014e4103728fa02ede.jpg")
 
 
 # Part of Day --------------------
 currentTime = datetime.datetime.now()
 
 if currentTime.hour < 12:
-    wish = "❤️ Good morning sweetheart ❤️"
+    waktu = "selamat pagi🌞"
 elif 12 <= currentTime.hour < 12:
-    wish = '🤍 Good afternoon my Love 🤍'
+    waktu = 'selamat sore🌝'
 else:
-    wish = '🦋 Good evening baby 🦋'
+    waktu = 'selamat malam🌚'
 
 # -------------------------------
 
@@ -45,8 +45,8 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-        txt=f"""Hello {wish} {message.from_user.first_name } \n\n
-	I am file renamer bot, Please sent any telegram**Document Or Video** and enter new filename to rename it"""
+        txt=f"""Halo {waktu} {message.from_user.first_name}❤ \n\n
+	, Please sent any telegram**Document Or Video** and enter new filename to rename it"""
         await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(

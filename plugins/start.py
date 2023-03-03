@@ -54,6 +54,7 @@ async def start(client, message):
                                        InlineKeyboardButton("🄼🅂 Ꮥᴜקק♢ꭈׁׅ†", url='https://t.me/MsSUPP0RT')], 
 				      [InlineKeyboardButton("TUTORIAL", callback_data='tutor')]
                                       ]))
+	
         return
     if id:
         if old == True:
@@ -83,8 +84,10 @@ async def start(client, message):
                                        InlineKeyboardButton("🄼🅂 Ꮥᴜקק♢ꭈׁׅ†", url='https://t.me/MsSUPP0RT')], 
 				      [InlineKeyboardButton("TUTORIAL", callback_data='tutor')]
                                       ]))
-    
-
+		
+@Client.on_callback_query(filters.regex('tutor'))
+async def tutor(bot,update):
+    await event.answer(f'BLM ADA TUTOR TOD,LAGI MALES GW☺', alert=True) 
 
 @Client.on_message((filters.private & (filters.document | filters.audio | filters.video)) | filters.channel & (filters.document | filters.audio | filters.video))
 async def send_doc(client, message):

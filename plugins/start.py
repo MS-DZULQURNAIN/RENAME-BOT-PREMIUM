@@ -46,7 +46,7 @@ async def start(client, message):
         id = message.text.split(' ')[1]
     except:
            pesan=f'Halo {waktu} {message.from_user.first_name}❤\n\nGW ADALAH **MS VIDEO EDITOR💻**\n\nGw bisa ngedit video lu kaya **UBAH NAMA,ENCODE RESOLUSI,POTONG DURASI VIDEO,EXTRAC VIDEO KE AUDIO MP3,SPESIAL CUSTOM THUMBNAIL**' 
-	   await message.reply_photo(photo=LAZY_PIC,
+	await message.reply_photo(photo=LAZY_PIC,
                                 caption=pesan,
                                 reply_markup=InlineKeyboardMarkup([
                                       [InlineKeyboardButton("DEVELOPER👤", url="https://t.me/MSDZULQURNAIN")],

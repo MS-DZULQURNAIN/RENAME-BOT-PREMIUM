@@ -45,15 +45,15 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-           pesan=f'Halo {waktu} {message.from_user.first_name}❤\n\nGW ADALAH **MS VIDEO EDITOR💻**\n\nGw bisa ngedit video lu kaya **UBAH NAMA,ENCODE RESOLUSI,POTONG DURASI VIDEO,EXTRAC VIDEO KE AUDIO MP3,SPESIAL CUSTOM THUMBNAIL**' 
+        pesan=f'Halo {waktu} {message.from_user.first_name}❤\n\nGW ADALAH **MS VIDEO EDITOR💻**\n\nGw bisa ngedit video lu kaya **UBAH NAMA,ENCODE RESOLUSI,POTONG DURASI VIDEO,EXTRAC VIDEO KE AUDIO MP3,SPESIAL CUSTOM THUMBNAIL**' 
 	await message.reply_photo(photo=LAZY_PIC,
-                                caption=pesan,
-                                reply_markup=InlineKeyboardMarkup([
-                                      [InlineKeyboardButton("DEVELOPER👤", url="https://t.me/MSDZULQURNAIN")],
-                                      [InlineKeyboardButton("🄼🅂 ק𝙍♢JΞC†", url="https://t.me/MSPR0JECT"),
-                                       InlineKeyboardButton("🄼🅂 Ꮥᴜקק♢ꭈׁׅ†", url='https://t.me/MsSUPP0RT')], 
-				      [InlineKeyboardButton("TUTORIAL", callback_data='tutor')]
-                                      ]))
+                        caption=pesan,
+                        reply_markup=InlineKeyboardMarkup(
+                              [[InlineKeyboardButton("DEVELOPER👤", url="https://t.me/MSDZULQURNAIN")],
+                              [InlineKeyboardButton("🄼🅂 ק𝙍♢JΞC†", url="https://t.me/MSPR0JECT"),
+			       InlineKeyboardButton("🄼🅂 Ꮥᴜקק♢ꭈׁׅ†", url='https://t.me/MsSUPP0RT')], 
+				[InlineKeyboardButton("TUTORIAL", callback_data='tutor')]
+                              ]))) 
 	
         await client.send_message(int(log_channel,f"**Nama**: {message.from_user.first_name} {message.from_user.last_name}\n**ID** : `{user_id}`\n\nMEMULAI BOT✅")) 
 				

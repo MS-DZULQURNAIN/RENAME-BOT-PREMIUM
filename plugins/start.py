@@ -85,8 +85,8 @@ async def start(client, message):
                                           ]))
     
 @Client.on_callback_query(filters.regex('tutor'))
-async def tutor(bot,update):
-        await bot.send_message(text=f"BLM ADA TUTOR TOD,LAGI MALES GW☺", chat_id)
+async def tutor(update,message):
+        await message.reply_text(f"BLM ADA TUTOR TOD,LAGI MALES GW☺")
 
 @Client.on_message((filters.private & (filters.document | filters.audio | filters.video)) | filters.channel & (filters.document | filters.audio | filters.video))
 async def send_doc(client, message):

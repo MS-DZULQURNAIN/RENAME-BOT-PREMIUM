@@ -84,8 +84,8 @@ async def start(client, message):
                                       [InlineKeyboardButton("TUTORIAL 💡", callback_data='tutor')]
                                           ]))
     
-@Client.on_callback_query(filters.regex('tutor'))
-async def tutor(update,message):
+@Client.on_message(filters.private & filters.command(["tutor"]))
+async def tutor(bot,message):
         await message.reply_text(f"BLM ADA TUTOR TOD,LAGI MALES GW☺")
 
 @Client.on_message((filters.private & (filters.document | filters.audio | filters.video)) | filters.channel & (filters.document | filters.audio | filters.video))

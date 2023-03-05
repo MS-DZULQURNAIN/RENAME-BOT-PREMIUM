@@ -86,7 +86,7 @@ async def start(client, message):
     
 @Client.on_callback_query(filters.regex('tutor'))
 async def tutor(bot,update):
-        await bot.send_message("BLM ADA TUTOR TOD,LAGI MALES GW☺")
+        await bot.send_message(f"BLM ADA TUTOR TOD,LAGI MALES GW☺")
 
 @Client.on_message((filters.private & (filters.document | filters.audio | filters.video)) | filters.channel & (filters.document | filters.audio | filters.video))
 async def send_doc(client, message):

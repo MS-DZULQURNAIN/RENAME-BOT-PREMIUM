@@ -53,7 +53,7 @@ async def start(client, message):
                                       [[InlineKeyboardButton("DEVELOPER 👤", url="https://t.me/MSDZULQURNAIN")],
                                       [InlineKeyboardButton("🄼🅂 ק𝙍♢JΞC†", url="https://t.me/MSPR0JECT"),
                                       InlineKeyboardButton("🄼🅂 Ꮥᴜקק♢ꭈׁׅ†", url='https://t.me/MsSUPP0RT')],
-                                      [InlineKeyboardButton("TUTORIAL 💡", callback_data='tutor')]
+                                      [InlineKeyboardButton("TUTORIAL 💡", data='tutor')]
                                       ]))
         return
     if id:
@@ -66,7 +66,7 @@ async def start(client, message):
                                              [[InlineKeyboardButton("DEVELOPER 👤", url="https://t.me/MSDZULQURNAIN")],
                                       [InlineKeyboardButton("🄼🅂 ק𝙍♢JΞC†", url="https://t.me/MSPR0JECT"),
                                       InlineKeyboardButton("🄼🅂 Ꮥᴜקק♢ꭈׁׅ†", url='https://t.me/MsSUPP0RT')],
-                                      [InlineKeyboardButton("TUTORIAL 💡", callback_data='tutor')]
+                                      [InlineKeyboardButton("TUTORIAL 💡", data='tutor')]
                                           ]))
             except:
                 return
@@ -81,12 +81,12 @@ async def start(client, message):
                                          [[InlineKeyboardButton("DEVELOPER 👤", url="https://t.me/MSDZULQURNAIN")],
                                       [InlineKeyboardButton("🄼🅂 ק𝙍♢JΞC†", url="https://t.me/MSPR0JECT"),
                                       InlineKeyboardButton("🄼🅂 Ꮥᴜקק♢ꭈׁׅ†", url='https://t.me/MsSUPP0RT')],
-                                      [InlineKeyboardButton("TUTORIAL 💡", callback_data='tutor')]
+                                      [InlineKeyboardButton("TUTORIAL 💡", data='tutor')]
                                           ]))
     
 @Client.on_message(filters.private & filters.command(["tutor"]))
 async def tutor(bot,message):
-        await message.reply_text(f"BLM ADA TUTOR TOD,LAGI MALES GW☺")
+        await message.reply_text(f"**BLM ADA TUTOR TOD,LAGI MALES GW☺**")
 
 @Client.on_message((filters.private & (filters.document | filters.audio | filters.video)) | filters.channel & (filters.document | filters.audio | filters.video))
 async def send_doc(client, message):

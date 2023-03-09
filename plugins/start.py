@@ -53,7 +53,7 @@ async def start(client, message):
                                       [[InlineKeyboardButton("DEVELOPER 👤", url="https://t.me/MSDZULQURNAIN")],
                                       [InlineKeyboardButton("🄼🅂 ק𝙍♢JΞC†", url="https://t.me/MSPR0JECT"),
                                       InlineKeyboardButton("🄼🅂 Ꮥᴜקק♢ꭈׁׅ†", url='https://t.me/MsSUPP0RT')],
-                                      [InlineKeyboardButton("TUTORIAL 💡", data='tutor')]
+                                      [InlineKeyboardButton("TUTORIAL 💡", callback_data='tutor')]
                                       ]))
         return
     if id:

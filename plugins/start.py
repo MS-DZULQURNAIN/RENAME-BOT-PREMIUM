@@ -91,7 +91,7 @@ async def tutor(bot,message):
 @Client.on_callback_query(filters.regex('tutor'))
 async def upgrade(bot,message):
         ttutor = "**BLM ADA TUTOR TOD, LAGI MALES GW😒**"
-        await bot.send_message(chat_id, text = ttutor)
+        await message.reply_text(text = ttutor)
 
 @Client.on_message((filters.private & (filters.document | filters.audio | filters.video)) | filters.channel & (filters.document | filters.audio | filters.video))
 async def send_doc(client, message):

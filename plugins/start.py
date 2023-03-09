@@ -215,7 +215,7 @@ async def send_doc(client, message):
  
 @Client.on_callback_query(filters.regex('xkembali'))
 async def xkembali(bot,update):
-        await update.message.edit(f"**MAU LU APAIN NIH FILE?**", reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup([
+        await update.message.edit(f"**MAU LU APAIN NIH FILE?**", reply_markup=InlineKeyboardMarkup([
                     [InlineKeyboardButton("UBAH NAMA📝", callback_data="rename")],
                     [InlineKeyboardButton("ENCODE RESOLISI♻", callback_data='encode')],
                     [InlineKeyboardButton("POTONG DURASI VIDEO✂", callback_data='trim')],

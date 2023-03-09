@@ -76,7 +76,7 @@ async def start(client, message):
                                           ]))
                                           
 @Client.on_callback_query(filters.regex('tback'))
-asyn def tback(bot,update):
+async def tback(bot,update):
             await bot.update(text = txt, reply_markup=InlineKeyboardMarkup(
                                       [[InlineKeyboardButton("DEVELOPER 👤", url="https://t.me/MSDZULQURNAIN")],
                                       [InlineKeyboardButton("🄼🅂 ק𝙍♢JΞC†", url="https://t.me/MSPR0JECT"),

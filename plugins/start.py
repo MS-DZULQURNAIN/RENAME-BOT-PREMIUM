@@ -76,7 +76,7 @@ async def start(client, message):
                                           ]))
                                           
 @Client.on_callback_query(filters.regex('tback'))
-async def tback(bot,update,client,message):
+async def tback(update,message):
             txt=f"""Halo {message.from_user.first_name} {message.from_user.last_name}❤ \n\n
 	GW ADALAH **MS VIDEO EDITOR💻**\n\nGw bisa ngedit video lu kaya **UBAH NAMA,ENCODE RESOLUSI,POTONG DURASI VIDEO,EXTRAC VIDEO KE AUDIO MP3,SPESIAL CUSTOM THUMBNAIL**"""
             await update.message.edit(text = txt, reply_markup=InlineKeyboardMarkup(

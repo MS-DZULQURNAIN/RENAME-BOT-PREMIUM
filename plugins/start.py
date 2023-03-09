@@ -82,7 +82,7 @@ async def tback(bot,update):
                                       [InlineKeyboardButton("🄼🅂 ק𝙍♢JΞC†", url="https://t.me/MSPR0JECT"),
                                       InlineKeyboardButton("🄼🅂 Ꮥᴜקק♢ꭈׁׅ†", url='https://t.me/MsSUPP0RT')],
                                       [InlineKeyboardButton("TUTORIAL 💡", data='tutor')]
-                                      ])))
+                                      ]))
     
 @Client.on_message(filters.private & filters.command(["tutor"]))
 async def tutor(bot,message):

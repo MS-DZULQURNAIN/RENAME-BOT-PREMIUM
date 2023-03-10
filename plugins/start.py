@@ -235,12 +235,12 @@ async def callback_query(Client, CallbackQuery):
             
         tcsoon = "**COMINGSOON\n\nTUNGGU UPDATE SELANJUTNYA TOD💩**"
         backbutton = InlineKeyboardMarkup([[InlineKeyboardButton("KEMBALI", callback_data="xkembali")]])
-        elif CallbackQuery.data == "trim":
+        if CallbackQuery.data == "trim":
             CallbackQuery.edit_message_text(text = tcsoon, reply_markup = backbutton)
             
         tcsoon = "**COMINGSOON\n\nTUNGGU UPDATE SELANJUTNYA TOD💩**"
         backbutton = InlineKeyboardMarkup([[InlineKeyboardButton("KEMBALI", callback_data="xkembali")]])
-        elif CallbackQuery.data == "extmp3":
+        if CallbackQuery.data == "extmp3":
             CallbackQuery.edit_message_text(text = tcsoon, reply_markup = backbutton)
         
         

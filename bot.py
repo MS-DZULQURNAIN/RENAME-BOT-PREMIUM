@@ -35,7 +35,5 @@ if STRING:
     for app in apps:
         app.stop()
     
-else:
-    print("BOT TELAH AKTIF🔥🔥🔥")
-    print("MS DZULQURNAIN") 
-    bot.run()
+else: 
+    bot.run(")

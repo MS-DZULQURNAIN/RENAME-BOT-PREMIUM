@@ -134,7 +134,7 @@ async def send_doc(client, message):
     c_time = time.time()
 
     if user_type == "GRATISAN":
-        LIMIT = 300
+        LIMIT = 600
     else:
         LIMIT = 50
     then = used_date + LIMIT
@@ -231,7 +231,7 @@ backbutton = InlineKeyboardMarkup([[InlineKeyboardButton("KEMBALI", callback_dat
 @Client.on_callback_query()
 async def callback_query(Client, CallbackQuery):
         if CallbackQuery.data == "encode":
-            CallbackQuery.edit_message_text(text = **COMINGSOON\n\nTUNGGU UPDATE SELANJUTNYA TOD💩**, show_allert=true)
+            CallbackQuery.edit_message_text("COMINGSOON\n\nTUNGGU UPDATE SELANJUTNYA TOD💩", show_allert=true)
             
         tcsoon = "**COMINGSOON\n\nTUNGGU UPDATE SELANJUTNYA TOD💩**"
         backbutton = InlineKeyboardMarkup([[InlineKeyboardButton("KEMBALI", callback_data="xkembali")]])

@@ -131,7 +131,7 @@ async def send_doc(client, message):
     conversion = datetime.timedelta(seconds=left)
     ltime = str(conversion)
     if left > 0:
-        await message.reply_text(f"___Bot ini bukan lu doang yg make ya tod`\n Tunggu {ltime} atau upgrade premium tanpa limit ketik___ /premium ___buat upgrade ke premium😗___", reply_to_message_id=message.id)
+        await message.reply_text(f"__Bot ini bukan lu doang yg make ya tod`\n Tunggu {ltime} atau upgrade premium tanpa limit ketik__ /premium __buat upgrade ke premium😗__", reply_to_message_id=message.id)
     else:
         # Forward a single message
         media = await client.get_messages(message.chat.id, message.id)

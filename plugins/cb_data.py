@@ -51,7 +51,7 @@ async def rename(bot, update):
 
 @Client.on_callback_query(filters.regex('thumbnail'))
 async def thumbnail(bot,update):
-        tthumbnail = "**PILIH MENU THUMBNAIL DIBAWAH INI⬇**\n\n**1.PASANG THUMBNAIL🖼 klik** /pasangthumbnail\n\n**2.HAPUS THUMBNAIL🗑 klik** /hapusthumbnail\n\n**3.LIHAT THUMBNAIL 👀 klik** /hapusthumbnail\n\nNANTI ADA PERINTAH SENDIRI💩"
+        tthumbnail = "**PILIH MENU THUMBNAIL DIBAWAH INI⬇**\n\n**1.PASANG THUMBNAIL🖼 klik** /pasangthumbnail\n\n**2.HAPUS THUMBNAIL🗑 klik** /hapusthumbnail\n\n**3.LIHAT THUMBNAIL 👀 klik** /lihatthumbnail\n\nNANTI ADA PERINTAH SENDIRI💩"
         butthumbnail = InlineKeyboardMarkup([
                                               [InlineKeyboardButton("TUTUP", callback_data="tutup")]])
         await update.message.edit(text = tthumbnail, reply_markup = butthumbnail)

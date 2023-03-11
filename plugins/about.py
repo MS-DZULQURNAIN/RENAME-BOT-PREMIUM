@@ -12,4 +12,4 @@ async def start(client,message):
 	data = find_one(int(botid))
 	total_rename = data["total_rename"]
 	total_size = data["total_size"]
-	await message.reply_text(f"MS RENAME BOT :- <a href='https://t.me/tlgrenamerbot'>KING</a>\nCreater :- <a href='https://t.me/ipapcorn_helper'>🦋Developer🦋</a>\nLanguage :- Python3\nLibrary :- Pyrogram 2.0\nServer :- PAID VPS\nTotal Renamed File :- {total_rename}\nTotal Size Renamed :- {humanbytes(int(total_size))} \n\n Thank you **<a href='https://t.me/ipapcorn_helper'>Developerr</a>** for your hard work \n\n❤️ we love you <a href='https://t.me/ipapcorn_helper'>**Developer**</a> ❤️",quote=True)
+	await message.reply_text(f"**MS RENAME BOT📝**\n\nPemilik : <a href='https://t.me/MSDZULQURNAIN'>🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍</a>\nLanguage : Python3\nLibrary : Pyrogram 2.0\nTotal ubah nama : {total_rename}\nTotal ukuran : {humanbytes(int(total_size))}\n\n🄼🅂 𝗗🆉𝗨𝗟𝚀𝐔𝐑𝐍Λ𝐈𝐍",quote=True)

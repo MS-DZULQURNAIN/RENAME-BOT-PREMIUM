@@ -21,7 +21,7 @@
 
     "success_url": "https://t.me/MsSUPP0RT",
     
-    "logo": "https://telegra.ph/file/a5a014e4103728fa02ede.jpg", 
+    "logo": "https://telegra.ph/file/00720c7690d7f5dbaa322.jpg", 
 
     "env": {
 
@@ -119,7 +119,7 @@
 
             "description":"FOTO START",
             
-            "value": "https://telegra.ph/file/a5a014e4103728fa02ede.jpg", 
+            "value": "https://telegra.ph/file/00720c7690d7f5dbaa322.jpg", 
 
             "required": true
 

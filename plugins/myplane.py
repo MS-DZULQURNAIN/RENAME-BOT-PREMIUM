@@ -13,7 +13,7 @@ from helper.date import check_expi
 from helper.database import uploadlimit, usertype
 
 
-@Client.on_message(filters.private & filters.command(["myplan"]))
+@Client.on_message(filters.private & filters.command(["plan"]))
 async def start(client, message):
     used_ = find_one(message.from_user.id)
     daily = used_["daily"]
@@ -35,14 +35,14 @@ async def start(client, message):
         pre_check = check_expi(ends)
         if pre_check == False:
             uploadlimit(message.from_user.id, 3145728000)
-            usertype(message.from_user.id, "Free")
+            usertype(message.from_user.id, "GRATISAN")
     if ends == None:
-        text = f"User ID:- ```{message.from_user.id}```\nPlan :- {user}\nDaly Upload Limit :- {humanbytes(limit)}\nToday Used :- {humanbytes(used)}\nRemain:- {humanbytes(remain)}"
+        text = f"ID LU : ```{message.from_user.id}```\nPlan : {user}\nLimit harian : {humanbytes(limit)}\nHari ini lu make : {humanbytes(used)}\nSisa : {humanbytes(remain)}"
     else:
         normal_date = datetime.fromtimestamp(ends).strftime('%Y-%m-%d')
-        text = f"User ID:- ```{message.from_user.id}```\nPlan :- {user}\nDaly Upload Limit :- {humanbytes(limit)}\nToday Used :- {humanbytes(used)}\nRemain:- {humanbytes(remain)}\n\nYour Plan Ends On :- {normal_date}"
+        text = f"ID kamu : ```{message.from_user.id}```\nPlan :- {user}\nLimit harian : {humanbytes(limit)}\nHari ini kamu memakai : {humanbytes(used)}\nTersedia : {humanbytes(remain)}\n\nPlan kamu berakhir pada : {normal_date}"
 
-    if user == "Free":
-        await message.reply(text, quote=True, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Upgrade 💰💳", callback_data="upgrade"), InlineKeyboardButton("Cancel ✖️ ", callback_data="cancel")]]))
+    if user == "GRATISAN":
+        await message.reply(text, quote=True, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("UPGRADE PREMIUM💎", callback_data="premium")], [InlineKeyboardButton("BATAL", callback_data="cancel")]]))
     else:
         await message.reply(text, quote=True)

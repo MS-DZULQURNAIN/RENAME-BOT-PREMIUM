@@ -5,14 +5,14 @@ from pyrogram import Client , filters
 @Client.on_callback_query(filters.regex('premium'))
 async def premium(bot,update):
         tprem = """**GRATISAN**
-	    LIMIT HARIAN : 2GB
-	    Harga          : Rp.0
+	LIMIT HARIAN : 2GB
+	Harga          : Rp.0
 	
-	    **PREMIUM💎** 
-	    LIMIT HARIAN : **UNLIMITED**
-	    Harga          : **Rp10.000** /Bulan
-	                     🌏 **1$** / Month"""
-	    kprem = InlineKeyboardMarkup([
+	**PREMIUM💎** 
+	LIMIT HARIAN : **UNLIMITED**
+	Harga          : **Rp10.000** /Bulan
+	                🌏 **1$** / Month"""
+	kprem = InlineKeyboardMarkup([
         			[InlineKeyboardButton("**Payment/Pembayaran💳**", callback_data="pay")], 
         			[InlineKeyboardButton("**ADMIN👤**", url="https://t.me/MSDZULQURNAIN")],
         			[InlineKeyboardButton("BATAL",callback_data = "cancel")]])
@@ -22,14 +22,14 @@ async def premium(bot,update):
 @Client.on_message(filters.private & filters.command(["premium"]))
 async def premium(bot,message):
     	tprem = """**GRATISAN**
-	    LIMIT HARIAN : 2GB
-	    Harga          : Rp.0
+	LIMIT HARIAN : 2GB
+	Harga          : Rp.0
 	
     	**PREMIUM💎** 
-	    LIMIT HARIAN : **UNLIMITED**
-	    Harga          : **Rp10.000** /Bulan
-	                     🌏 **1$** / Month"""
-	    kprem = InlineKeyboardMarkup([
+	LIMIT HARIAN : **UNLIMITED**
+	Harga          : **Rp10.000** /Bulan
+	                🌏 **1$** / Month"""
+	kprem = InlineKeyboardMarkup([
         			[InlineKeyboardButton("**Payment/Pembayaran💳**", callback_data="pay")], 
         			[InlineKeyboardButton("**ADMIN👤**", url="https://t.me/MSDZULQURNAIN")],
         			[InlineKeyboardButton("BATAL",callback_data = "cancel")]])

@@ -1,7 +1,7 @@
 """lokaman"""
 from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 from pyrogram import Client , filters
-QRIS = os.environ.get("QRIS", "https://telegra.ph/MS-RENAME-BOT-03-10")
+QRIS = os.environ.get("QRIS", "https://telegra.ph/file/00720c7690d7f5dbaa322.jpg")
 
 @Client.on_message(filters.private & filters.command(["premium"]))
 async def premiumcm(bot,message):

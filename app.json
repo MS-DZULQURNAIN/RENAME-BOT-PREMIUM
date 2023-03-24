@@ -115,7 +115,7 @@
              "required": true
 
         },
-        "QRIA":{
+        "QRIS":{
 
             "description":"QRIS PEMBAYARAN",
             

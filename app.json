@@ -123,7 +123,7 @@
 
             "required": true
 
-       }
+       }, 
         "LAZY_PIC":{
 
             "description":"FOTO START",

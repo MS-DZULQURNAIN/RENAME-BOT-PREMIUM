@@ -115,6 +115,15 @@
              "required": true
 
         },
+        "QRIA":{
+
+            "description":"QRIS PEMBAYARAN",
+            
+            "value": "https://telegra.ph/file/00720c7690d7f5dbaa322.jpg", 
+
+            "required": true
+
+       }
         "LAZY_PIC":{
 
             "description":"FOTO START",
